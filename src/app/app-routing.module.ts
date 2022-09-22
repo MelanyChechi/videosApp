@@ -14,7 +14,27 @@ const routes: Routes = [
   {
     path: 'a-bela-e-a-fera',
     loadChildren: () => import('./a-bela-e-a-fera/a-bela-e-a-fera.module').then( m => m.ABelaEAFeraPageModule)
+  },  {
+    path: 'thor',
+    loadChildren: () => import('./thor/thor.module').then( m => m.ThorPageModule)
   },
+  {
+    path: 'minions',
+    loadChildren: () => import('./minions/minions.module').then( m => m.MinionsPageModule)
+  },
+  {
+    path: 'cinderela',
+    loadChildren: () => import('./cinderela/cinderela.module').then( m => m.CinderelaPageModule)
+  },
+  {
+    path: 'cinderela',
+    loadChildren: () => import('./cinderela/cinderela.module').then( m => m.CinderelaPageModule)
+  },
+  {
+    path: 'cruella',
+    loadChildren: () => import('./cruella/cruella.module').then( m => m.CruellaPageModule)
+  },
+
 ];
 
 @NgModule({
